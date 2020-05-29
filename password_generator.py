@@ -14,7 +14,7 @@ def pass_gen(pass_size):
     c.extend(s3)
     c.extend(s4)
     random.shuffle(c)
-    #result=random.sample(c,4)
+    #result=random.sample(c,pass_size)
     #return result
     return ("".join(c[:pass_size]))
    
@@ -28,5 +28,6 @@ if __name__ == "__main__":
         else:
             print("input is not as integer")
     print(f"Generated Password= {pass_gen(n)}")
+    #print(f"Generated Password= {pass_gen(n)}")
 
 
