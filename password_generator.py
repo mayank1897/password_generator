@@ -14,6 +14,8 @@ def pass_gen(pass_size):
     c.extend(s3)
     c.extend(s4)
     random.shuffle(c)
+    #result=random.sample(c,4)
+    #return result
     return ("".join(c[:pass_size]))
    
 
